@@ -33,17 +33,18 @@
 
 &pro_micro_i2c {
   status = "okay";
-
+  scl-pin = <20>;
+  sda-pin = <17>;
   oled: ssd1306@3c {
     compatible = "solomon,ssd1306fb";
     reg = <0x3c>;
-    label = "SSD1306";
+    label = "DISPLAY";
     width = <128>;
     height = <64>;
     segment-offset = <0>;
     page-offset = <0>;
     display-offset = <0>;
-    multiplex-ratio = <63>;
+    multiplex-ratio = <31>;
     com-invdir;
     segment-remap;
     com-sequential;
