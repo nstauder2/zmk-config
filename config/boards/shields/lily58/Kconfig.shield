@@ -1,5 +1,5 @@
-config SHIELD_LILY58WIRELESS_LEFT
+config SHIELD_LILY58_LEFT
 	def_bool $(shields_list_contains,lily58_left)
 
-config SHIELD_LILY58WIRELESS_RIGHT
+config SHIELD_LILY58_RIGHT
 	def_bool $(shields_list_contains,lily58_right)
