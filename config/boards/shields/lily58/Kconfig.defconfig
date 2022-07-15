@@ -1,3 +1,18 @@
+if SHIELD_LILY58_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Lily58"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_LILY58_LEFT || SHIELD_LILY58_RIGHT
+
+config ZMK_SPLIT
+	default y
+
 if ZMK_DISPLAY
 
 config I2C
@@ -33,3 +48,5 @@ choice LVGL_COLOR_DEPTH
 endchoice
 
 endif # LVGL
+
+endif
