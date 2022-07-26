@@ -41,7 +41,7 @@
 	};
 };
 
-&pro_micro_i2c {
+&i2c0 {
   status = "okay";
   scl-pin = <29>;
   sda-pin = <31>;
